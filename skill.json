@@ -1,0 +1,25 @@
+{
+  "name": "genpark-personal-agent-thermal-shock-hormesis-dose-skill",
+  "version": "1.0.0",
+  "description": "Calculates cold shock (norepinephrine, BAT thermogenesis) and sauna heat shock (HSP70, cardiovascular strain, hydration) hormesis doses.",
+  "tools": [
+    {
+      "name": "calculate_cold_exposure_dose",
+      "description": "Calculates neurochemical surge, BAT thermogenesis, and safety margins for deliberate cold exposure.",
+      "parameters": {
+        "water_temp_c": "float",
+        "duration_minutes": "float",
+        "immersion_type": "string (optional, default 'water_immersion')"
+      }
+    },
+    {
+      "name": "calculate_sauna_heat_dose",
+      "description": "Calculates cardiovascular load, HSP70 induction, and electrolyte loss for deliberate heat exposure.",
+      "parameters": {
+        "sauna_temp_c": "float",
+        "duration_minutes": "float",
+        "humidity_pct": "float (optional, default 15.0)"
+      }
+    }
+  ]
+}
